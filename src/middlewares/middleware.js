@@ -5,9 +5,11 @@ function middlewareGlobal(req, res, next) {
 }
 
 function checkCsrfError(err, req, res, next) {
-    if(err && err.code === 'EBADCSRFTOKEN') {
+    if(err) {
         return res.render('404')
     }
+
+    next()
 }
 
 function csrfMiddleware(req, res, next) {
