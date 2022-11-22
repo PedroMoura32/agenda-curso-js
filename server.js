@@ -24,7 +24,6 @@ const helmet = require('helmet')
 const csrf = require('csurf')
 //middlewares são "funções" que são executadas no meio do caminho
 const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/middlewares/middleware')
-
 app.use(helmet())
 
 app.use(express.urlencoded({ extended: true })) //podemos postar formularios para dentro da aplicação

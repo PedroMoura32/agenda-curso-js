@@ -7,6 +7,7 @@ const index = (req, res) => {
 
 async function register(req, res) {
 
+
     try {
         const login = new Login(req.body) // enviando o body como argumento que é necessário para o contrutor da classe
         await login.register()
