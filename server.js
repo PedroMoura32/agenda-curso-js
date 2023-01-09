@@ -1,6 +1,6 @@
 //aqui temos as variáveis de ambiente, para que as senhas e usuários possam estar protegidos - la no arquivo .env
 require('dotenv').config()
-
+console.log('teste')
 const express = require('express') // inicio do express
 const app = express()
 const mongoose = require('mongoose') // vai modelar nossa base de dados
